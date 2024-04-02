@@ -1,0 +1,19 @@
+"pytest -v"
+-------- will give lot more details on the testcases, each testcases method execution result
+to get all commands of pytest type "pytest --help"
+
+to check the print statements "pytest -v -s"
+
+to execute perticular method in one python file pytest -s " directory name\filename -vsk "methodname"
+
+to do sanity test "@pytest.mark.sanity"  execute command "pytest -vm sanity"
+#regression
+to do regression test "@pytest.mark.regression"  execute command "pytest -vm regression"
+we can skip also ".skip"
+
+fixture are each of the steps arrange and clean up
+
+pytest -s LearnPytest\test_practice1.py
+
+to execute complete testcases in specific browser
+---- > pytest -v -s browser chrome
